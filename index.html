@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi, Welcome!</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+    <header id="main-header" class="container" title="Header Utama Profil">
+        <h1>It's Me, Miftha Wahdania!
+        </h1>
+    </header>
+
+    <main class="container">
+        <section class="profile-intro">
+            <div class="profile-info">
+                <h2>Data Diri</h2>
+                <p class="data-text">
+                    Nama Lengkap: Miftha Wahdania
+                </p>
+                <p class="data-text">
+                    NIM: 246270011
+                </p>
+                <p class="data-text">
+                    Hobi Utama: Writing & Designing
+                </p>
+            </div>
+
+            <div class="profile-picture">
+                <img src="img/ita.jpg" alt="Foto Saya" width="180" height="180" class="profile-img">
+                </div>
+        </section>
+
+        <hr>
+
+        <section id="biodata">
+            <h2>Biodata Lengkap</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Informasi</th>
+                        <th>Detail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nama</td>
+                        <td>Miftha Wahdania</td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td>30 Mei 2006</td>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td>Jl. Tanggul Selatan</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>mifthawahdania@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section class="hobby-list">
+            <h2>Daftar Hobi & Aktivitas</h2>
+            
+            <div class="list-group">
+                <h3>Aktivitas Favorit (Ordered List - ol) </h3>
+                <ol>
+                    <li>Menulis Puisi dan Cerpen.</li>
+                    <li>Mencoba Hal Baru.</li>
+                    <li>Membaca Novel Genre Romantis.</li>
+                </ol>
+            </div>
+
+            <div class="list-group">
+                <h3>Hobi (Unordered List - ul) </h3>
+                <ul>
+                    <li>Mendesain Publikasi Dokumentasi.</li>
+                    <li>Mendalami Makna Sebuah Lagu.</li>
+                    <li>Riset Tren Terbaru.</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="contact-form">
+            <h2>Formulir Kontak Sederhana</h2>
+            <form action="#" method="post" class="styled-form">
+                
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" required title="Isi dengan nama Anda">
+                    </div>
+
+                <div class="form-group">
+                    <label for="email">Email Aktif:</label>
+                    <input type="email" id="email" name="email" required>
+                    </div>
+
+                <div class="form-group radio-group">
+                    <label>Jenis Kelamin:</label>
+                    <input type="radio" id="pria" name="jenis_kelamin" value="Pria">
+                    <label for="pria">Pria</label>
+                    <input type="radio" id="wanita" name="jenis_kelamin" value="Wanita">
+                    <label for="wanita">Wanita</label>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label>Minat (Bisa pilih lebih dari satu):</label>
+                    <div>
+                        <input type="checkbox" id="backend" name="minat[]" value="Backend">
+                        <label for="backend">Backend Development</label>
+                        
+                        <input type="checkbox" id="frontend" name="minat[]" value="Frontend">
+                        <label for="frontend">Frontend Development</label>
+
+                        <input type="checkbox" id="uiux" name="minat[]" value="UIUX">
+                        <label for="uiux">UI/UX Design</label>
+                        
+                        <input type="checkbox" id="testing" name="minat[]" value="Testing">
+                        <label for="testing">Software Testing</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Kirim Data Saya</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Miftha Wahdania</p>
+    </footer>
+</body>
+
+</html>

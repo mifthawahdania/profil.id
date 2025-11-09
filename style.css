@@ -1,0 +1,160 @@
+/* style.css */
+
+/* Penggunaan CSS Dasar */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9eef2; /* Latar belakang cerah */
+    color: #333;
+}
+
+/* Penggunaan atribut global 'class' (container) */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+#main-header {
+    background-color: #c43670; /* Warna biru cerah */
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 0;
+}
+
+h1, h2 {
+    color: #c43670;
+    border-bottom: 2px solid #c43670;
+    padding-bottom: 5px;
+}
+h1 { color: white; border-bottom: none; }
+
+/* Flexbox untuk Tata Letak Gambar & Info */
+.profile-intro {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 0;
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+/* Gambar Profil  */
+.profile-img {
+    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+    border: 5px solid #c43670;
+    object-fit: cover;
+}
+
+.data-text {
+    background-color: #f7f9fc; /* Latar belakang paragraf lebih menonjol */
+    padding: 8px;
+    border-left: 5px solid #c43670;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* Tabel [cite: 26] */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #c43670; /* Warna header tabel */
+    color: #333;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra striping untuk variasi baris */
+}
+
+/* Daftar/List  */
+.hobby-list {
+    display: flex;
+    gap: 40px;
+}
+
+.list-group {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+}
+
+/* Formulir [cite: 28] */
+.styled-form {
+    padding: 20px;
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.styled-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.styled-form input[type="text"],
+.styled-form input[type="email"] {
+    width: 97%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    background-color: #c43670; /* Tombol submit hijau */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #c43670;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #c43670;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Media Query untuk Responsivitas */
+@media (max-width: 600px) {
+    .profile-intro, .hobby-list {
+        flex-direction: column;
+    }
+    .container {
+        margin: 10px;
+        padding: 10px;
+    }
+}
